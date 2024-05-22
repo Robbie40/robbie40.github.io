@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+    font-size: 14px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin: 0px;
+    color: rgb(52, 52, 52);
+    font-weight: bold;
+}
+
+#logo, #info, #icons {
+    display: flex;
+}
+
+li {
+    padding: 20px;
+}
+
+#logo, #icons {
+    width: 102px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#icons li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#logoSvg {
+    width: 120px;
+    height: 24px;
+    
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+}
+
+#section1 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png);
+    background-size: cover;
+    background-position: 0px -125px;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+#section1Buttons {
+    margin-top: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    width: 264px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#orderBtn {
+    color: rgb(87, 87, 87);
+}
+
+#testBtn {
+    color: white;
+    background-color: rgb(87, 87, 87);
+}
+
+
