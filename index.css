@@ -4,6 +4,8 @@ body {
     font-size: 14px;
 }
 
+/*Landing Page (Model Y)*/
+
 ul {
     display: flex;
     list-style-type: none;
@@ -28,7 +30,7 @@ li {
     padding-right: 30px;
 }
 
-#icons li {
+#icons li, #logo li {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -44,20 +46,28 @@ li {
     height: 24px;
 }
 
-#section1 {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png);
+.sections {
     background-size: cover;
     background-position: 0px -125px;
     height: 100vh;
+    text-align: center;
+}
+
+#section1 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png);
+}
+
+#section1 h1 {
+    padding-top: 75px;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 100px;
+    padding-top: 150px;
     font-size: 40px;
+    margin: 0px;
 }
 
-#section1Buttons {
+.section1and2Btns {
     margin-top: 600px;
     display: flex;
     justify-content: center;
@@ -73,7 +83,7 @@ button {
     font-size: 14px;
 }
 
-#orderBtn {
+#orderBtn1 {
     color: rgb(87, 87, 87);
 }
 
@@ -82,4 +92,118 @@ button {
     background-color: rgb(87, 87, 87);
 }
 
+/*Section 2 (Model 3)*/
 
+#section2 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-RHD-v2.jpg);
+    
+}
+
+#section2InfoLink, #section3Header p, #section5Header p{
+    text-decoration: underline;
+}
+
+#section2Btns {
+    margin-top: 550px;
+}
+
+#orderBtn2 {
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
+
+#learnMoreBtn {
+    color: rgb(87, 87, 87);
+    background-color: rgb(186, 186, 186);
+}
+
+#testDrivePara {
+    text-decoration: underline;
+    color: white;
+    padding-top: 20px;
+}
+
+
+/*Section 3 (Model S)*/
+
+#section3 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop);
+}
+
+.learnMoreBtn2 {
+    color: white;
+    background-color: rgb(48, 48, 48);
+    margin-top: 525px;
+}
+
+#lefthdPara {
+    padding-top: 50px;
+    color: rgb(53, 53, 53);
+}
+
+
+/*Section 4 (Solar and Powerwall)*/
+
+#section4 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Desktop_SolarPanels.jpg);
+    background-position: 0px -300px;
+}
+
+/*Section 5 (Model X)*/
+
+#section5 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop.jpg);
+}
+
+#lefthdPara2 {
+    color: white;
+    padding-top: 50px;
+}
+
+/*Section 6 (Experience Tesla)*/
+
+#section6 {
+    position: relative;
+}
+
+video {
+    position: relative;
+}
+
+#section6Content {
+    position: absolute;
+    width: 100%;   
+    top: 0px;
+}
+
+#section6Header {
+    color: white;
+}
+
+#testBtn2 {
+    background-color: transparent;
+    border: solid;
+    border-color: white;
+    color: white;
+    margin-top: 525px;
+}
+
+/*Section 7 (Accessories)*/
+
+#section7 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-EMEA.jpg);
+    margin-top: 100px;
+}
+
+#shopBtn {
+    margin-top: 575px;
+    color: rgb(110, 110, 110);
+}
+
+/*Footer*/
+
+footer {
+    height: 75px;
+    background-color: black;
+    
+}
