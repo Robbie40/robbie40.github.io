@@ -10,9 +10,8 @@
         <body>
             <!--Landing Page (Model Y)-->
             <div id="section1" class="sections">
-                <header>
                     <nav>
-                        <ul>
+                        <ul id="navItems">
                             <div id="logo">
                                 <li>
                                     <svg viewBox="100 0 150 70" id="logoSvg" xmlns="http://www.w3.org/2000/svg"> 
@@ -21,11 +20,175 @@
                                 </li>
                             </div>
                             <div id="info">
-                                <li>Vehicles</li>
-                                <li>Energy</li>
-                                <li>Charging</li>
-                                <li>Discover</li>
-                                <li>Shop</li>
+                                <!--Dropdown menu for vehicles-->
+                                <div class="dropdown" id="dropdownVehicles">
+                                    <li class="dropBtn">Vehicles</li>
+                                    <div class="dropdownContent" id="dropdownContVehicles">
+                                        <div class="dropdownItemsCont">
+                                            <div class="dropdownItems">                                            
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3-Performance-RHD.png" alt="">                                          
+                                                <h2>Model 3</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                    <p>Order</p>
+                                                </div>
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y.png" alt="">
+                                                <h2>Model Y</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                    <p>Order</p>
+                                                </div>                                               
+                                              </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Cybertruck-1x.png" alt="">
+                                                <h2>Cybertruck</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                </div>                                               
+                                            </div>
+                                            <div class="dropdownLine" id="dropdownLineVehicles"></div>
+                                            <div>
+                                                <ul class="dropdownLinks">
+                                                    <li>Test Drive</li>
+                                                    <li>Trade-in</li>
+                                                    <li>Pre-Configured Vehicles</li>
+                                                    <li>Certified Pre-Owned</li>
+                                                    <li>Company Car</li>
+                                                    <li>Model S</li>
+                                                    <li>Model X</li>
+                                                    <li>Roadster</li>
+                                                    <li>Semi</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="dropdown" id="dropdownEnergy">
+                                    <li class="dropBtn">Energy</li>
+                                    <div class="dropdownContent" id="dropdownContEnergy">
+                                        <div class="dropdownItemsCont">
+                                            <div class="dropdownItems">                                            
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Powerwall-Global.png" alt="">                                          
+                                                <h2>Powerwall</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                </div>
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Megapack.png" alt="">
+                                                <h2>Megapack</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                </div>                                               
+                                              </div>
+                                            <div class="dropdownLine" id="dropdownLineEnergy"></div>
+                                            <div>
+                                                <ul class="dropdownLinks">
+                                                    <li>Support</li>
+                                                    <li>Partner with Tesla</li>
+                                                    <li>Customer Stories</li>
+                                                    <li>Utilities</li>
+                                                    <li>Commercial</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="dropdown" id="dropdownCharging">
+                                    <li class="dropBtn">Charging</li>
+                                    <div class="dropdownContent" id="dropdownContCharging">
+                                        <div class="dropdownItemsCont">
+                                            <div class="dropdownItems">                                            
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Charging-Global.png" alt="">                                          
+                                                <h2>Charging</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                </div>
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Home-Charging-Global.png" alt="">
+                                                <h2>Home Charging</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                    <p>Shop</p>
+                                                </div>                                               
+                                              </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Supercharging-EMEA.png" alt="">
+                                                <h2>Supercharging</h2>
+                                                <div class="itemLinks">
+                                                    <p>Learn</p>
+                                                    <p>Find</p>
+                                                </div>                                               
+                                            </div>
+                                            <div class="dropdownLine" id="dropdownLineEnergy"></div>
+                                            <div>
+                                                <ul class="dropdownLinks">
+                                                    <li>Supercharger Voting</li>
+                                                    <li>Host a Supercharger</li>
+                                                    <li>Host Wall Connectors</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="dropdown" id="dropdownDiscover">
+                                    <li class="dropBtn">Discover</li>
+                                    <div class="dropdownContent" id="dropdownContDiscover">
+                                        <div class="dropdownItemsCont">
+                                            <div class="dropdownItems">
+                                                <ul class="dropdownLinks">
+                                                    <li class="dropdownDiscoverHeaders">Resources</li>
+                                                    <li>Test Drives</li>
+                                                    <li>Customer Stories</li>
+                                                    <li>Events</li>
+                                                    <li>Video Guides</li>
+                                                </ul>                                            
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <ul class="dropdownLinks">
+                                                    <li class="dropdownDiscoverHeaders">Location Services</li>
+                                                    <li>Find Us</li>
+                                                    <li>Find a Certified Installer</li>
+                                                    <li>Find a Body Shop</li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <ul class="dropdownLinks">
+                                                    <li class="dropdownDiscoverHeaders">Company</li>
+                                                    <li>About</li>
+                                                    <li>Careers</li>
+                                                    <li>Investor Relations</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="dropdown" id="dropdownShop">
+                                    <li class="dropBtn">Shop</li>
+                                    <div class="dropdownContent" id="dropdownContShop">
+                                        <div class="dropdownItemsCont">
+                                            <div class="dropdownItems">                                            
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Charging.png" alt="">                                          
+                                                <h2>Charging</h2>
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Vehicle-Accessories.png" alt="">
+                                                <h2>Vehicle Accessories</h2>
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Apparel.png" alt="">
+                                                <h2>Apparel</h2>
+                                            </div>
+                                            <div class="dropdownItems">
+                                                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Lifestyle.png" alt="">
+                                                <h2>Lifestyle</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
                             </div>
                             <div id="icons">
                                 <li>
@@ -46,12 +209,13 @@
                             </div>
                         </ul>
                     </nav>
-                    <h1>Model Y</h1>
-                </header>
-                <div class="section1and2Btns">
-                    <button id="orderBtn1">Order Now</button>
-                    <button id="testBtn">Test Drive</button>
-                </div>
+                    <div class="headerandBtns">
+                        <h1>Model Y</h1>
+                        <div class="section1and2Btns">
+                            <button id="orderBtn1">Order Now</button>
+                            <button id="testBtn">Test Drive</button>
+                        </div>
+                    </div>                   
             </div>
             <!--Section 2 (Model 3)-->
             <div id="section2" class="sections">
@@ -65,6 +229,7 @@
                 </div>
                 <p id="testDrivePara">Schedule a Test Drive</p>
             </div>
+            <!--Section 3 (Model S)-->
             <div id="section3" class="sections">
                 <div id="section3Header">
                     <h1>Model S</h1>
@@ -73,6 +238,7 @@
                 <button class="learnMoreBtn2">Learn More</button>
                 <p id="lefthdPara">Only available as left-hand drive</p>
             </div>
+            <!--Section 4 (Solar and Powerwall)-->
             <div id="section4" class="sections">
                 <div id="section4Header">
                     <h1>Solar and Powerwall</h1>
@@ -80,6 +246,7 @@
                 </div>
                 <button class="learnMoreBtn2">Learn More</button>
             </div>
+            <!--Section 5 (Model X)-->
             <div id="section5" class="sections">
                 <div id="section5Header">
                     <h1>Model X</h1>
@@ -88,6 +255,7 @@
                 <button class="learnMoreBtn2">Learn More</button>
                 <p id="lefthdPara2">Only available as left-hand drive</p>
             </div>
+            <!--Section 6 (Experience Tesla)-->
             <div id="section6" class="sections">
                 <video src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4" autoplay muted loop></video>
                 <div id="section6Content">
@@ -98,6 +266,7 @@
                     <button id="testBtn2">Test Drive</button>
                 </div>
             </div>
+            <!--Section 7 (Accessories)-->
             <div id="section7" class="sections">
                 <h1>Accessories</h1>
                 <button id="shopBtn">Shop Now</button>
@@ -105,5 +274,7 @@
             <footer>
 
             </footer>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+            <script src="index.js"></script>
         </body>
     </html>

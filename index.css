@@ -1,12 +1,12 @@
 body {
     font-family: 'Roboto';
     margin: 0px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /*Landing Page (Model Y)*/
 
-ul {
+#navItems {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -14,6 +14,7 @@ ul {
     margin: 0px;
     color: rgb(52, 52, 52);
     font-weight: bold;
+    
 }
 
 #logo, #info, #icons {
@@ -21,11 +22,13 @@ ul {
 }
 
 li {
-    padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 #logo, #icons {
     width: 102px;
+    padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -206,4 +209,99 @@ footer {
     height: 75px;
     background-color: black;
     
+}
+
+/*Drop-down Menu*/
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdownContent {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 475px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Links inside the dropdown */
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropBtn {
+    background-color: rgb(242, 242, 242);
+}
+
+.dropBtn {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdownItemsCont {
+    display: flex;
+    opacity: 0;
+    transition: 1s;
+}
+
+.dropdownItems {
+    padding: 20px;
+}
+
+.dropdownItems h2 {
+    margin: 0px;
+}
+
+img {
+    height: 125px;
+    width: 225px;   
+}
+
+.itemLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.itemLinks p {
+    padding: 10px;
+    margin: 0px;
+    color: gray;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.dropdownLinks {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.dropdownLinks li {
+    padding: 7px;
+    list-style-type: none;
+    text-align: left;
+    margin: 0px;
+}
+
+.dropdownLine {
+    width: 2px;
+    background-color: rgb(231, 231, 231);
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+#dropdownLineEnergy {
+    height: 175px;
+}
+
+.dropdownDiscoverHeaders {
+    color: gray;
+    font-weight: normal;
 }
