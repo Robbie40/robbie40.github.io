@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     font-size: 15px;
 }
@@ -19,6 +19,7 @@ body {
 
 #logo, #info, #icons {
     display: flex;
+    transition: 1s;
 }
 
 li {
@@ -31,6 +32,7 @@ li {
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    z-index: 1;
 }
 
 #icons li, #logo li {
@@ -115,7 +117,7 @@ button {
     background-color: rgb(48, 48, 48);
 }
 
-#learnMoreBtn {
+#learnBtn {
     color: rgb(87, 87, 87);
     background-color: rgb(186, 186, 186);
 }
@@ -133,7 +135,7 @@ button {
     background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop);
 }
 
-.learnMoreBtn2 {
+.learnBtn2 {
     color: white;
     background-color: rgb(48, 48, 48);
     margin-top: 525px;
@@ -304,4 +306,73 @@ img {
 .dropdownDiscoverHeaders {
     color: gray;
     font-weight: normal;
+}
+
+/*Model 3 Page*/
+
+#m3Choose {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Desktop-RHD.png);
+    transition: 0.75s;
+}
+
+#m3Choose .dropBtn {
+    color: white;
+    transition: 0.5s;
+}
+
+#m3Choose #logo, #m3Choose #icons {
+    filter: invert(100%);
+}
+
+#m3ChooseHeaderandBtns {
+    color: white;
+    width: 100%;
+    padding-left: 20%;
+    margin-top: 150px;
+    text-align: left;
+}
+
+#m3ChooseHeaderandBtns h1 {
+    font-size: 55px;
+    
+}
+
+#m3ChooseHeaderandBtns h2 {
+    margin-top: 0px;
+}
+
+#m3ChooseHeaderandBtns button {
+    margin: 7px;
+    margin-left: 0px;
+}
+
+#performancePara {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
+}
+
+#m3ChooseBtns {
+    width: 400px;
+}
+
+#m3ChooseOrderBtn {
+    color: white;
+    background-color: rgb(66, 94, 255);
+}
+
+#m3ChooseLearnBtn {
+    color: white;
+    background-color: rgb(38, 38, 38);
+}
+
+#downArrow {
+    font-size: 20px;
+    margin-right: 10px;
+    display: inline;
+}
+
+#m3ChoosePerformanceCont {
+    padding-top: 15px;
+    cursor: pointer;
 }
