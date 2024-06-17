@@ -81,7 +81,7 @@ $('#dropdownShop').mouseover(function() {
 });
 
 //Closes dropdown menu
-$('.headerandBtns').mouseover(function() {
+$('.headerAndBtns').mouseover(function() {
     $('.dropdownContent').slideUp();
     $('.dropdownItemsCont').css('opacity', '0');
 });
@@ -90,7 +90,7 @@ $('.headerandBtns').mouseover(function() {
 
 //Changes nav bar items color when drop down menu slides down and up
 
-$('#m3ChooseHeaderandBtns').mouseover(function() {
+$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns').mouseover(function() {
     $('.dropBtn').css('color', 'white');
     $('#logo').css('filter', 'invert(100%)');
     $('#icons').css('filter', 'invert(100%)');

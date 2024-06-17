@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     font-size: 15px;
+    background-color: rgb(16, 16, 16);
 }
 
 p {
@@ -57,7 +58,7 @@ li {
 
 .sections {
     background-size: cover;
-    background-position: 0px -125px;
+    background-position: 0px -100px;
     height: 100vh;
     text-align: center;
 }
@@ -665,3 +666,238 @@ img {
     color: white;
     border-top: solid 5px white;
 }
+
+
+
+/*------------------------------------------- Cybertruck Page -------------------------------------------*/
+
+/*Section 1*/
+
+.ctSection1 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Main-Hero-Hedgehog-Desktop.png) !important;
+}
+
+#ctChooseHeaderandBtns {
+    width: 100%;
+    height: 600px;
+}
+
+#ctChooseHeaderandBtns div {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#ctChooseHeaderandBtns button {
+    background-color: rgb(17, 17, 17);
+    color: gray;
+    border-top: solid gray;
+    border-radius: 0px;
+    width: 200px;
+    margin-top: 525px;
+    height: 45px;
+}
+
+/*Section 2*/
+
+#ctSection2 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Second-Hero-Desktop.jpg);
+    background-position: 0px 0px;
+    height: 1250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#ctSection2 div {
+    background-color: rgba(17, 17, 17, 0.5);
+    color: rgb(198, 198, 198);
+    margin: 25px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 175px;
+}
+
+#ctSection2 div h2, #ctSection2 div h5 {
+    margin: 5px;
+}
+
+#ctSection2 div h2 {
+    font-size: 28px;
+}
+
+#ctInfo1 {
+    border-top: solid 1px white;
+    border-right: solid 1px white;
+}
+
+#ctInfo2 {
+    border-top: solid 1px white;
+}
+
+#ctInfo3 {
+    border-top: solid 1px white;
+    border-left: solid 1px white;
+}
+
+/*Section 3*/
+
+#ctSection3 {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 150px 150px rgb(16, 16, 16);
+}
+
+#ctBuiltForCont video {
+    max-width: 1300px;
+    max-height: 1000px;
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+}
+
+#ctBuiltForCont {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#ctBuiltForInfo {
+    background-image: radial-gradient(rgb(44, 44, 44) 1px, transparent 0);
+    background-size: 20px 20px;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    align-items: center;
+}
+
+#ctBuiltForInfo h3 {
+    width: 200px;
+    padding-top: 25px;
+}
+
+#ctBuiltForInfo h2 {
+    font-size: 28px;
+    width: 300px;
+    color: rgb(197, 197, 197);
+    padding-top: 25px;
+}
+
+#ctBuiltForInfo p {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 25px;
+}
+
+#ctBuiltForInfo div {
+    background-color: gray;
+    width: 1px;
+    height: 40px;
+    margin-top: 25px;
+}
+
+#ctBuiltForCont button {
+    margin-top: 50px;
+    background-color: transparent;
+    color: gray;
+    width: 300px;
+    border: solid 1px rgb(55, 55, 55);
+    border-radius: 0px;
+}
+
+/*Section 4*/
+
+#ctSection4 {
+    height: 1200px;
+}
+
+.ctResistance {
+    display: flex;
+    justify-content: center;
+}
+
+.ctResistance video {
+    max-width: 1300px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    margin-top: -100px;
+}
+
+#ctResistanceCont {
+    padding-top: 225px;
+}
+
+.ctResistance h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 28px;
+    color: rgb(197, 197, 197);
+}
+
+.ctResistance p {
+    color: gray;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 25px;
+}
+
+#ctResistanceInfo1, #ctResistanceInfo2 {
+    width: 30%;
+}
+
+#ctResistanceInfo1 {
+    text-align: left;
+    margin-left: 50px;
+    background-image: radial-gradient(rgb(44, 44, 44) 1px, transparent 0);
+    background-size: 20px 20px;
+    box-shadow: inset 0px -700px 300px -500px rgb(16, 16, 16);
+}
+
+#ctResistanceInfo2 {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 35px;
+    
+} 
+
+#ctResistanceInfo2 h2 {
+    margin-right: 50px;
+}
+
+#ctResistanceMerge {
+    margin-top: -50px;
+}
+
+#ctResistanceInfo2Cont {
+    width: 25%;
+    height: 500px;
+    background-image: radial-gradient(rgb(44, 44, 44) 1px, transparent 0);
+    background-size: 20px 20px;
+    display: flex;
+    align-items: end;
+    margin-right: 50px;
+    box-shadow: inset 0px 700px 300px -500px rgb(16, 16, 16);
+}
+
+.ctResistanceVidCont {
+    height: 500px;
+    width: 30%;
+    overflow: hidden;
+}
+
+/*Section5*/
+
+#ctSection5 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 250px;
+}
+
+#ctSection5 video {
+    margin-top: 250px;
+}
+
+
+
+
