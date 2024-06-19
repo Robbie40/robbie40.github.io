@@ -77,6 +77,10 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    font-size: 26px;
+}
+
 .section1and2Btns {
     margin-top: 600px;
     display: flex;
@@ -425,7 +429,6 @@ img {
 
 #mYInfoCont div h2 {
     margin: 0;
-    font-size: 26px;
 }
 
 #mYInfoCont div p {
@@ -447,10 +450,6 @@ img {
     margin-left: 20%;
     width: 40%;
     text-align: left;
-}
-
-#modelYSection2 div h2 {
-    font-size: 30px;
 }
 
 #modelYSection2 div p {
@@ -501,10 +500,6 @@ img {
     text-decoration: underline;
 }
 
-#modelYSection3 h2 {
-    font-size: 26px;
-}
-
 #modelYSection3 p {
     font-size: 16px;
 }
@@ -520,7 +515,6 @@ img {
     transition: 1s;
     color: rgb(85, 85, 85);
     margin: 0px;
-    font-size: 24px;
 }
 
 #mYInfo #head1, #mYInfo #para1 {
@@ -544,10 +538,6 @@ img {
     position: relative;
 }
 
-#modelYSection4 h2 {
-    font-size: 28px;
-}
-
 #modelYSection4 div {
     position: absolute;
     bottom: 0px;
@@ -564,13 +554,17 @@ img {
 
 /*Section 5*/
 
+#modelYSection5 {
+    background-color: white;
+}
+
 #modelYSection5 img {
     max-width: 1100px;
     max-height: 1100px;
     width: auto;
     height: auto;
     border-radius: 10px;
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 #modelYSection5 button {
@@ -611,10 +605,12 @@ img {
 #modelYSection6 {
     background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Range-Desktop-RHD.jpg);
     box-shadow: inset 0px 650px 150px -500px white;
+    background-position: 0px 0px;
+    height: 1200px;
 }
 
 #modelYSection6 div {
-    margin-top: 100px;
+    padding-top: 150px;
     text-align: left;
     width: 35%;
     margin-left: 20%;
@@ -624,7 +620,7 @@ img {
 
 #modelYSection7 {
     background-color: black;
-    box-shadow: 0 0 150px 150px black;
+    box-shadow: 0 0 100px 125px black;
     display: flex;
     justify-content: center;
 }
@@ -643,10 +639,6 @@ img {
     justify-content: center;
     gap: 20px;
     margin-top: 40px;
-}
-
-#mYTrips h2 {
-    font-size: 26px;
 }
 
 #mYTripCont {
@@ -721,10 +713,6 @@ img {
     margin: 5px;
 }
 
-#ctSection2 div h2 {
-    font-size: 28px;
-}
-
 #ctInfo1 {
     border-top: solid 1px white;
     border-right: solid 1px white;
@@ -775,7 +763,6 @@ img {
 }
 
 #ctBuiltForInfo h2 {
-    font-size: 28px;
     width: 300px;
     color: rgb(197, 197, 197);
     padding-top: 25px;
@@ -831,7 +818,6 @@ img {
 .ctResistance h2 {
     margin-top: 50px;
     margin-left: 50px;
-    font-size: 28px;
     color: rgb(197, 197, 197);
 }
 
@@ -958,7 +944,6 @@ img {
 }
 
 #pwSection2 h2 {
-    font-size: 26px;
     margin-bottom: 25px;
 }
 
@@ -1004,13 +989,150 @@ img {
     text-align: left;
 }
 
-#pwSection4 h2 {
-    font-size: 26px;
-}
-
 /*Section4*/
 
 #pwSection5 {
     background-color: black;
     color: white;
+}
+
+
+/*------------------------------------------- Powerwall Page -------------------------------------------*/
+
+/*Section1*/
+
+#mpSection1 video {
+    z-index: -2;
+    margin-top: -75px;
+}
+
+#mpSection1 nav {
+    position: absolute;
+    width: 100%;
+}
+
+#mpHeader {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+#mpHeaderInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 400px;
+}
+
+#mpHeaderInfo div {
+    margin: 35px;
+}
+
+#mpHeaderInfo button {
+    background-color: transparent;
+    border: solid black;
+    width: 200px;
+}
+
+#mpHeaderInfo p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mpHeaderInfo h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#mpHeaderInfoCont {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*Section2*/
+
+#mpSection2 {
+    background-color: white;
+}
+
+#mpSection2 img {
+    max-width: 700px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 75px;
+}
+
+/*Section3*/
+
+#mpSection3 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Megapack_Outage_D);
+    display: flex;
+    justify-content: center;
+}
+
+#mpSection3 div {
+    width: 35%;
+}
+
+/*Section4*/
+
+#mpSection4 {
+    background-color: white;
+    height: 800px;
+}
+
+#mpInstallCont {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mpInstallCont div {
+    width: 30%;
+    text-align: left;
+}
+
+#mpSection4 video {
+    max-width: 700px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 75px;
+}
+
+/*Section5*/
+
+#mpSection5 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Megapack_FullyIntegrated_D);
+}
+
+#mpSection5 div {
+    padding-top: 25px;
+    margin-left: 20%;
+    text-align: left;
+    width: 30%;
+}
+
+/*Section6*/
+
+#mpSection6 {
+    background-color: white;
+}
+
+#mpSection6 video {
+    max-width: 700px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 75px;
 }
