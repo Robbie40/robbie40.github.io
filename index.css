@@ -535,7 +535,7 @@ img {
 }
 
 #mYInfoHeadings div {
-    height: 90px;
+    padding: 20px;
 }
 
 /*Section 4*/
@@ -677,17 +677,17 @@ img {
     background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Main-Hero-Hedgehog-Desktop.png) !important;
 }
 
-#ctChooseHeaderandBtns {
+#ctHeaderandBtns {
     width: 100%;
     height: 600px;
 }
 
-#ctChooseHeaderandBtns div {
+#ctHeaderandBtns div {
     width: 100%;
     margin-top: 100px;
 }
 
-#ctChooseHeaderandBtns button {
+#ctHeaderandBtns button {
     background-color: rgb(17, 17, 17);
     color: gray;
     border-top: solid gray;
@@ -901,3 +901,116 @@ img {
 
 
 
+/*------------------------------------------- Powerwall Page -------------------------------------------*/
+
+/*Section 1*/
+
+.pwSection1 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Powerwall-Hero-Desktop-UK.jpg) !important;
+    color: white; 
+    box-shadow: inset 0px 550px 300px -500px rgb(16, 16, 16);
+}
+
+#pwHeaderandBtns {
+    width: 100%;
+    height: 600px;
+}
+
+#pwHeaderandBtns p {
+    margin-bottom: 625px;
+    font-weight: bold;
+}
+
+#pwHeaderandBtns h1 {
+    padding-top: 100px;
+}
+
+#getPwBtn {
+    color: rgb(58, 58, 58);
+    margin-right: 10px;
+}
+
+#getUpdatesBtn {
+    background-color: transparent;
+    color: white;
+    border: solid white;
+    margin-left: 10px;
+}
+
+/*Section2*/
+
+#pwSection2 {
+    box-shadow: 0 0 150px 100px black;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/power-your-home-desktop.png);
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+    background-position: 0px 0px;
+}
+
+#pwSection2 div {
+    width: 35%;
+    margin-top: 50px;
+}
+
+#pwSection2 p {
+    font-size: 14px;
+}
+
+#pwSection2 h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/*Section3*/
+
+#pwSection3 {
+    background-color: black;
+    box-shadow: 0 0 150px 150px black;
+    display: flex;
+    justify-content: center;
+}
+
+#pwSection3 video {
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+    transition: 1s;
+}
+
+#pwEnergyCont {
+    height: 500px;
+    margin-top: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+/*Section4*/
+
+#pwSection4 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/storms-happen-desktop);
+    background-position: 0px 0px;
+    height: 1200px;
+    color: white;
+    display: flex;
+    align-items: end;
+}
+
+#pwSection4 div {
+    margin-left: 20%;
+    margin-bottom: 100px;
+    width: 40%;
+    text-align: left;
+}
+
+#pwSection4 h2 {
+    font-size: 26px;
+}
+
+/*Section4*/
+
+#pwSection5 {
+    background-color: black;
+    color: white;
+}

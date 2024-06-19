@@ -90,7 +90,7 @@ $('.headerAndBtns').mouseover(function() {
 
 //Changes nav bar items color when drop down menu slides down and up
 
-$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns').mouseover(function() {
+$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns').mouseover(function() {
     $('.dropBtn').css('color', 'white');
     $('#logo').css('filter', 'invert(100%)');
     $('#icons').css('filter', 'invert(100%)');
@@ -160,6 +160,7 @@ $('#head1').click(function() {
         else {
             $('#para1').slideDown();
             $('.mYDivCont img').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Overview-Carousel-Slide-1-Charging-Desktop-Global.jpg");
+            $('#pwSection5 img').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/capture-more-solar-desktop");
         }
     });
     $('#mYInfo h2').each(function(i, obj) {
@@ -180,6 +181,7 @@ $('#head2').click(function() {
         else {
             $('#para2').slideDown();
             $('.mYDivCont img').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Overview-Carousel-Slide-2-Performance-Desktop-RHD.jpg");
+            $('#pwSection5 img').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/avoid-peak-pricing-desktop");
         }
     });
     $('#mYInfo h2').each(function(i, obj) {
@@ -295,6 +297,7 @@ $('#mYTrip1').click(function() {
             $(this).css('color', 'white');
             $(this).css('border-top', 'solid 5px white');
             $('#tripImg').attr('src',"images/mYTripImage1.JPG");
+            $('#pwSection3 video').attr('src',"https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/powerwall-store-use-save-carousel-01.mp4");
         }
     });
 });
@@ -309,6 +312,7 @@ $('#mYTrip2').click(function() {
             $(this).css('color', 'white');
             $(this).css('border-top', 'solid 5px white');
             $('#tripImg').attr('src',"images/mYTripImage2.JPG");
+            $('#pwSection3 video').attr('src',"https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/powerwall-store-use-save-carousel-02.mp4");
         }
     });
 });
@@ -323,6 +327,7 @@ $('#mYTrip3').click(function() {
             $(this).css('color', 'white');
             $(this).css('border-top', 'solid 5px white');
             $('#tripImg').attr('src',"images/mYTripImage3.JPG");
+            $('#pwSection3 video').attr('src',"https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/powerwall-store-use-save-carousel-03.mp4");
         }
     });
 });
