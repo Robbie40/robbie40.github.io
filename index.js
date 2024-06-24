@@ -90,7 +90,7 @@ $('.headerAndBtns').mouseover(function() {
 
 //Changes nav bar items color when drop down menu slides down and up
 
-$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns').mouseover(function() {
+$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns, #chargeHeaderandBtns').mouseover(function() {
     $('.dropBtn').css('color', 'white');
     $('#logo').css('filter', 'invert(100%)');
     $('#icons').css('filter', 'invert(100%)');
@@ -360,3 +360,48 @@ $('#mYTrip5').click(function() {
     });
 });
 
+
+/*------------------------------------------- Charging Page -------------------------------------------*/
+
+
+$('#chargeInfo1').click(function() {
+    $('#mYTrips div').each(function(i, obj) {
+        if ($(this).html() != $('#chargeInfo1').html()) {
+            $(this).css('color', 'rgb(188, 188, 188)');
+            $(this).css('border-top', 'solid 2px rgb(188, 188, 188)');
+        }
+        else {
+            $(this).css('color', 'black');
+            $(this).css('border-top', 'solid 5px black');
+            $('#chargeImg').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Carousel-2-Optimize-Desktop-RHD.jpg");
+        }
+    });
+});
+
+$('#chargeInfo2').click(function() {
+    $('#mYTrips div').each(function(i, obj) {
+        if ($(this).html() != $('#chargeInfo2').html()) {
+            $(this).css('color', 'rgb(188, 188, 188)');
+            $(this).css('border-top', 'solid 2px rgb(188, 188, 188)');
+        }
+        else {
+            $(this).css('color', 'black');
+            $(this).css('border-top', 'solid 5px black');
+            $('#chargeImg').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Carousel-2-Battery-Desktop-RHD.jpg");
+        }
+    });
+});
+
+$('#chargeInfo3').click(function() {
+    $('#mYTrips div').each(function(i, obj) {
+        if ($(this).html() != $('#chargeInfo3').html()) {
+            $(this).css('color', 'rgb(188, 188, 188)');
+            $(this).css('border-top', 'solid 2px rgb(188, 188, 188)');
+        }
+        else {
+            $(this).css('color', 'black');
+            $(this).css('border-top', 'solid 5px black');
+            $('#chargeImg').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Carousel-2-Recommend-Desktop-RHD.jpg");
+        }
+    });
+});

@@ -7,6 +7,8 @@ body {
 
 p {
     line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
 }
 
 /*Landing Page (Model Y)*/
@@ -79,6 +81,8 @@ h1 {
 
 h2 {
     font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .section1and2Btns {
@@ -997,7 +1001,7 @@ img {
 }
 
 
-/*------------------------------------------- Powerwall Page -------------------------------------------*/
+/*------------------------------------------- Megapack Page -------------------------------------------*/
 
 /*Section1*/
 
@@ -1136,3 +1140,287 @@ img {
     border-radius: 5px;
     margin-right: 75px;
 }
+
+
+
+/*------------------------------------------- Charging Page -------------------------------------------*/
+
+/*Section1*/
+
+.chargeSection1 {
+    color: white;
+    background-image: none !important;
+}
+
+.chargeSection1 nav {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.chargeSection1 video {
+    margin-top: -75px;
+}
+
+#chargeHeaderandBtns div {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#chargeHeaderandBtns button {
+    background-color: transparent;
+    border: solid white;
+    color: white;
+    margin-top: 600px;
+}
+
+/*Section2*/
+
+#chargeSection2 {
+    background-color: white;
+    height: 1800px;
+}
+
+#chargeSection2 p {
+    color: rgb(51, 51, 51);
+}
+
+#chargeSection2 h3 {
+    margin-top: 30px;
+}
+
+#chargeHeader {
+    padding-top: 125px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#chargeHeader div {
+    width: 30%;
+}
+
+#chargeInfo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#chargeInfo div {
+    margin: 15px;
+    text-align: left;
+    width: 20%;
+}
+
+#chargeInfo img {
+    max-width: 100%;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+}
+
+#startChargedCont {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#startChargedCont img {
+    max-width: 100%;
+    max-height: 1200px;
+    width: auto;
+    height: auto;
+}
+
+#startCharged {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    text-align: left;
+}
+
+#startCharged h2 {
+    margin-top: 0px;
+}
+
+#startCharged p {
+    width: 50%;
+    margin-top: 0px;
+}
+
+#startCharged button {
+    background-color: white;
+    border: solid black;
+    width: 200px;
+} 
+
+/*Section3*/
+
+#chargeSection3 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Largest-Network-Desktop.jpg);
+    color: white;
+    text-align: left;
+    background-position: 0px 0px;
+    height: 1200px;
+}
+
+#freedomCont {
+    margin-left: 20%;
+    padding-top: 75px;
+}
+
+#chargeFindBtn {
+    color: white;
+    background-color: transparent;
+    border: solid white;
+    margin-right: 25px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+#chargeLearnBtn {
+    color: white;
+    background-color: rgb(41, 41, 41);
+    margin-right: 25px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+#freedomCont p {
+    width: 50%;
+}
+
+/*Section4*/
+
+#chargeSection4 {
+    background-color: white;
+}
+
+#chargeSection4 img {
+    max-width: 100%;
+    max-height: 1200px;
+    width: auto;
+    height: auto;
+}
+
+#chargeRouteCont {
+    display: flex;
+    justify-content: center;
+}
+
+#chargeRouteHeader {
+    padding-top: 50px;
+    text-align: left;
+}
+
+#chargeSection4 #pwEnergyCont {
+    margin-top: 56px;
+}
+
+#chargeSection4 #mYTrips {
+margin-top: 10px;
+}
+
+#mYTrips #chargeInfo1 {
+    color: black;
+    border-top: solid 5px black;
+}
+
+#mYTrips #chargeInfo2 {
+    color: rgb(188, 188, 188);
+}
+
+#mYTrips #chargeInfo3 {
+    color: rgb(188, 188, 188);
+}
+
+/*Section5*/
+
+#chargeSection5 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Less-Than-Gas-Desktop-EMEA-APAC.jpg);
+    background-position: 0px 0px;
+    height: 1050px;
+}
+
+/*Section6*/
+
+#chargeSection6 {
+    background-color: white;
+    height: 850px;
+}
+
+#batteryCont {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 50px;
+}
+
+#reduceCostInfo {
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+#reduceCostInfo p {
+    width: 60%;
+}
+
+#reduceCostInfo button {
+    border: solid black;
+    background-color: white;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#warrantyInfo h2 {
+    margin: 0px;
+}
+
+#warrantyInfo p {
+    margin-top: 5px;
+    width: 80%;
+}
+
+#warrantyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#warrantyInfo img {
+    max-width: 50%;
+    max-height: 1000px;
+    width: auto;
+    height: auto;
+    margin-right: 100px;
+}
+
+#warrantyInfo div {
+    text-align: left;
+}
+
+/*Section7*/
+
+#chargeSection7 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-End-of-Page-Desktop.jpg);
+    height: 700px;
+}
+
+/*Section8*/
+
+#chargeSection8 {
+    padding-top: 50px;
+    height: 300px;
+    background-color: black;
+    box-shadow: 0 0 150px 150px black;
+    color: white;
+}
+
+#chargeSection8 button {
+    background-color: black;
+    border: solid white;
+    width: 200px;
+    color: white;
+    margin-top: 20px;
+}
+
