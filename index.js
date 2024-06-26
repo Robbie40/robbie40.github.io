@@ -90,7 +90,7 @@ $('.headerAndBtns').mouseover(function() {
 
 //Changes nav bar items color when drop down menu slides down and up
 
-$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns, #chargeHeaderandBtns').mouseover(function() {
+$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns, #chargeHeaderandBtns, #hChargeHeaderandBtns').mouseover(function() {
     $('.dropBtn').css('color', 'white');
     $('#logo').css('filter', 'invert(100%)');
     $('#icons').css('filter', 'invert(100%)');
@@ -405,3 +405,31 @@ $('#chargeInfo3').click(function() {
         }
     });
 });
+
+
+
+/*------------------------------------------- Home Charging Page -------------------------------------------*/
+
+//Uses Intersection Observer API to make headers and paragraphs slide and fade in on the page when they come into the viewport
+
+const numOfHeaders = 3;
+for (let i = 1; i <= numOfHeaders; i++) {
+  //target is equal to the container of the header
+  const target = document.querySelector("#convenienceCont" + i);
+  const headers = document.querySelector("#convenienceInfo" + i);
+  const objOptions = {
+    root: null,
+    threshold: 0.2,
+    rootMargin: "0px",
+  };
+  const observer = new IntersectionObserver(callBackFunction, objOptions);
+  observer.observe(target);
+  function callBackFunction(entries) {
+    const [entry] = entries;
+    if (entry.isIntersecting) {
+      headers.classList.remove("hidden");
+    } else {
+      headers.classList.add("hidden");
+    }
+  }
+}
