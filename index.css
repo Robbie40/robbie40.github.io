@@ -297,6 +297,10 @@ img {
     margin-left: 50px;
 }
 
+#dropdownInfo {
+    margin-right: 175px;
+}
+
 .dropdownLinks li {
     padding: 7px;
     list-style-type: none;
@@ -1335,6 +1339,11 @@ margin-top: 10px;
     color: rgb(188, 188, 188);
 }
 
+#mYTrips #chargeInfo4 {
+    color: rgb(188, 188, 188);
+}
+
+
 /*Section5*/
 
 #chargeSection5 {
@@ -1446,6 +1455,19 @@ margin-top: 10px;
     margin-top: 550px;
 }
 
+#wallChargeInfo img {
+    width: 32px;
+    height: 32px;
+}
+
+#wallChargeInfo h2 {
+    height: 32px;
+}
+
+#wallChargeInfo p {
+    font-weight: bold;
+}
+
 #wallChargeInfo div {
     width: 8%;
     margin: 15px;
@@ -1488,8 +1510,8 @@ margin-top: 10px;
 }
 
 #hChargeSection2 img {
-    max-width: 78%;
-    max-height: 1000px;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
 }
@@ -1509,6 +1531,134 @@ margin-top: 10px;
 .hidden {
     opacity: 0;
     transform: translateY(100%);
+}
+
+
+
+/*------------------------------------------- Supercharging Page -------------------------------------------*/
+
+/*Section1*/
+
+.sChargeSection1 {
+    background-image: none !important;
+    color: white;
+}
+
+.sChargeSection1 nav {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.sChargeSection1 video {
+    margin-top: -125px;
+}
+
+#sChargeHeader {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#sChargeInfo {
+    display: flex;
+    justify-content: center;
+    margin-top: 575px;
+    z-index: 2;
+}
+
+#sChargeInfo p {
+    font-weight: bold;
+}
+
+#sChargeInfo div {
+    padding: 25px;
+}
+
+/*Section3*/
+
+.sChargeSection3 {
+    height: 1250px;
+}
+
+#convenienceBtns #findUsBtn {
+    width: 200px;
+}
+
+#convenienceBtns { 
+    text-align: left;
+}
+
+#sChargeTravel video {
+    max-width: 100%;
+    max-height: 800px;
+    width: auto;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.sChargeTravelCont {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sChargeTravelHeader {
+    padding-top: 75px;
+    display: flex;
+    text-align: left;
+    margin-left: 125px;
+    margin-bottom: 75px;
+    transition: 1s;
+}
+
+.sChargeTravelHeader p {
+    width: 50%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.sChargeTravelHeader h2 {
+    margin-bottom: 0px;
+}
+
+.sChargeTravelHeader h3 {
+    margin-top: 0px;
+}
+
+.sChargeTravelHeader div {
+    margin-right: 125px;
+}
+
+.sChargeTravelInfoCont {
+    width: 65%;
+}
+
+.sChargeSpeedCont #sChargeSpeedImage {
+    max-width: 150%;
+    max-height: 100%;
+    margin-left: -100px;
+}
+
+.sChargeSpeedCont {
+    overflow: hidden;
+    position: relative;
+}
+
+.sChargeSpeedInfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.sChargeSpeedInfo div {
+    width: 300px;
 }
 
 

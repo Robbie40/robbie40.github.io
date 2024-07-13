@@ -90,7 +90,7 @@ $('.headerAndBtns').mouseover(function() {
 
 //Changes nav bar items color when drop down menu slides down and up
 
-$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns, #chargeHeaderandBtns, #hChargeHeaderandBtns').mouseover(function() {
+$('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns, #chargeHeaderandBtns, #hChargeHeaderandBtns, #sChargeHeaderandBtns').mouseover(function() {
     $('.dropBtn').css('color', 'white');
     $('#logo').css('filter', 'invert(100%)');
     $('#icons').css('filter', 'invert(100%)');
@@ -374,6 +374,7 @@ $('#chargeInfo1').click(function() {
             $(this).css('color', 'black');
             $(this).css('border-top', 'solid 5px black');
             $('#chargeImg').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Carousel-2-Optimize-Desktop-RHD.jpg");
+            $('#sChargeTravel video').attr('src',"https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Supercharger-Carousel-Slide-1-Desktop-NA.mp4");
         }
     });
 });
@@ -388,6 +389,7 @@ $('#chargeInfo2').click(function() {
             $(this).css('color', 'black');
             $(this).css('border-top', 'solid 5px black');
             $('#chargeImg').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Carousel-2-Battery-Desktop-RHD.jpg");
+            $('#sChargeTravel video').attr('src',"https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Supercharger-Carousel-Slide-2-Desktop-NA.mp4");
         }
     });
 });
@@ -402,6 +404,22 @@ $('#chargeInfo3').click(function() {
             $(this).css('color', 'black');
             $(this).css('border-top', 'solid 5px black');
             $('#chargeImg').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Carousel-2-Recommend-Desktop-RHD.jpg");
+            $('#sChargeTravel video').attr('src',"https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Supercharger-Carousel-Slide-3-Desktop-NA.mp4");
+        }
+    });
+});
+
+$('#chargeInfo4').click(function() {
+    $('#mYTrips div').each(function(i, obj) {
+        if ($(this).html() != $('#chargeInfo4').html()) {
+            $(this).css('color', 'rgb(188, 188, 188)');
+            $(this).css('border-top', 'solid 2px rgb(188, 188, 188)');
+        }
+        else {
+            $(this).css('color', 'black');
+            $(this).css('border-top', 'solid 5px black');
+            $('#chargeImg').attr('src',"https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Carousel-2-Recommend-Desktop-RHD.jpg");
+            $('#sChargeTravel video').attr('src',"https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Supercharger-Carousel-Slide-4-Desktop-NA.mp4");
         }
     });
 });
@@ -412,7 +430,7 @@ $('#chargeInfo3').click(function() {
 
 //Uses Intersection Observer API to make headers and paragraphs slide and fade in on the page when they come into the viewport
 
-const numOfHeaders = 3;
+const numOfHeaders = 4;
 for (let i = 1; i <= numOfHeaders; i++) {
   //target is equal to the container of the header
   const target = document.querySelector("#convenienceCont" + i);
