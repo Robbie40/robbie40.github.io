@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -60,9 +64,19 @@ li {
 
 .sections {
     background-size: cover;
-    background-position: 0px -100px;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100vh;
+    width: 100vw;
+    max-width: 100%;
     text-align: center;
+}
+
+#homeSection1Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 #homeSection1 {
@@ -86,7 +100,7 @@ h2 {
 }
 
 .section1and2Btns {
-    margin-top: 600px;
+    margin-bottom: 225px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -114,7 +128,9 @@ button {
 
 #homeSection2 {
     background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-RHD-v2.jpg);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #section2InfoLink, #section3Header p, #section5Header p{
@@ -122,7 +138,11 @@ button {
 }
 
 #section2Btns {
-    margin-top: 550px;
+    margin-bottom: 0px;
+}
+
+#section2BtnsCont {
+    margin-bottom: 50px;
 }
 
 #orderBtn2 {
@@ -132,7 +152,7 @@ button {
 
 #learnBtn {
     color: rgb(87, 87, 87);
-    background-color: rgb(186, 186, 186);
+    background-color: rgb(232, 232, 232);
 }
 
 #testDrivePara {
@@ -145,37 +165,62 @@ button {
 /*Section 3 (Model S)*/
 
 #homeSection3 {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-v2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
 }
 
 .learnBtn2 {
     color: white;
-    background-color: rgb(48, 48, 48);
-    margin-top: 525px;
+    background-color: rgb(30, 30, 30);
+}
+
+#learnMoreBtn {
+    margin-bottom: 100px;
 }
 
 #lefthdPara {
     padding-top: 50px;
-    color: rgb(53, 53, 53);
+    margin-bottom: 64px;
+    color: white;
 }
 
 
-/*Section 4 (Solar and Powerwall)*/
+/*Section 4 (Powerwall)*/
 
 #homeSection4 {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Desktop_SolarPanels.jpg);
-    background-position: 0px -300px;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-01-Desktop.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#homeSection4 h1 {
+    color: white;
+}
+
+.powerwallBtns {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 /*Section 5 (Model X)*/
 
 #homeSection5 {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop.jpg);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop-v2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #lefthdPara2 {
     color: white;
     padding-top: 50px;
+    margin-bottom: 64px;
 }
 
 /*Section 6 (Experience Tesla)*/
@@ -186,10 +231,16 @@ button {
 
 video {
     position: relative;
+    height: 120vh;
 }
 
 #section6Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
+    height: 100%;
     width: 100%;   
     top: 0px;
 }
@@ -203,7 +254,6 @@ video {
     border: solid;
     border-color: white;
     color: white;
-    margin-top: 525px;
 }
 
 /*Section 7 (Accessories)*/
@@ -211,19 +261,15 @@ video {
 #homeSection7 {
     background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-EMEA.jpg);
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #shopBtn {
-    margin-top: 575px;
     color: rgb(110, 110, 110);
-}
-
-/*Footer*/
-
-footer {
-    height: 75px;
-    background-color: black;
-    
+    margin-bottom: 125px;
 }
 
 /*Drop-down Menu*/
@@ -325,11 +371,108 @@ img {
     font-weight: normal;
 }
 
+/*Dropdown menu for smaller screen sizes*/
+
+#menuBtn {
+    width: 85px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 35px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: rgba(89, 89, 89, 0.1);
+    cursor: pointer;
+}
+
+.menubtnWhite {
+    color: white;
+}
+
+#dropdownMenu {
+    position: absolute;
+    right: 0px;
+}
+
+#dropdownMenu li {
+    width: 75px;
+    height: 30px;
+}
+
+#menuItems {
+    text-align: left;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    display: none;
+    margin-top: -50px;
+}
+
+#menuItems h3 {
+    padding: 25px;
+    padding-left: 50px;
+    margin: 0px;
+}
+
+#menuItems h3:hover {
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.menuCloseBtn {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-top: -50px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+
+.menuArrow {
+    float: right;
+}
+
+.menuDropdownItemsCont {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+}
+
+#menuDropdownItems {
+    display: flex;
+}
+
+#menuLine {
+    width: 80vw;
+    height: 2px;
+}
+
+.menuDropdownItemsCont button {
+    float: none;
+    margin-top: 0px;
+}
+
+#dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.backBtn {
+    cursor: pointer;
+}
+
 /*------------------------------------------- Model 3 Choose Page -------------------------------------------*/
 
 #m3Choose {
     background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Desktop-RHD.png);
     transition: 0.75s;
+    overflow: hidden;
+    height: 105vh;
 }
 
 #m3Choose .dropBtn {
@@ -359,11 +502,11 @@ img {
 }
 
 #m3ChooseHeaderandBtns button {
-    margin: 7px;
-    margin-left: 0px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
-#performancePara {
+.performancePara {
     font-size: 14px;
     font-weight: bold;
     display: inline;
@@ -383,15 +526,17 @@ img {
     background-color: rgb(38, 38, 38);
 }
 
-#downArrow {
+.downArrow {
     font-size: 20px;
     margin-right: 10px;
     display: inline;
 }
 
-#m3ChoosePerformanceCont {
+.m3ChoosePerformanceCont {
     padding-top: 15px;
+    padding-bottom: 15px;
     cursor: pointer;
+    width: 200px;
 }
 
 /*------------------------------------------- Model Y Page -------------------------------------------*/
@@ -405,6 +550,13 @@ img {
 
 #modelYSection1 h1 {
     padding-top: 100px;
+}
+
+#mYheaderandBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
 }
 
 #mYOrderBtn {
@@ -426,7 +578,6 @@ img {
     display: flex;
     justify-content: center;
     color: white;
-    margin-top: 525px;
 }
 
 #mYInfoCont div {
@@ -469,7 +620,7 @@ img {
 #modelYSection3 {
     background-color: black;
     color: white;
-    height: 1500px;
+    height: 2000px;
 }
 
 #modelYSection3 video {
@@ -502,6 +653,10 @@ img {
 
 .mYAccidentDiv {
     padding: 25px;
+}
+
+.mYAccidentDiv h2 {
+    margin-top: 16px;
 }
 
 #mYunderline {
@@ -544,6 +699,8 @@ img {
 
 #modelYSection4 {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 #modelYSection4 div {
@@ -554,6 +711,11 @@ img {
     width: 35%;
     margin-left: 20%;
     margin-top: 200px;
+}
+
+#modelYSection4 video {
+    width: 100%;
+    height: auto;
 }
 
 .underline {
@@ -569,10 +731,10 @@ img {
 #modelYSection5 img {
     max-width: 1100px;
     max-height: 1100px;
-    width: auto;
+    width: 75%;
     height: auto;
-    border-radius: 10px;
-    margin-top: 250px;
+    border-radius: 5px;
+    margin-top: 100px;
 }
 
 #modelYSection5 button {
@@ -606,6 +768,10 @@ img {
     margin-top: 100px;
     font-size: 12px;
     text-align: center;
+}
+
+#mYChargingInfo #mYChargingInfoBtns {
+    width: 100%;
 }
 
 /*Section 6*/
@@ -677,6 +843,14 @@ img {
     background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Main-Hero-Hedgehog-Desktop.png) !important;
 }
 
+#ctHeaderCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
 #ctHeaderandBtns {
     width: 100%;
     height: 600px;
@@ -684,7 +858,7 @@ img {
 
 #ctHeaderandBtns div {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #ctHeaderandBtns button {
@@ -693,7 +867,6 @@ img {
     border-top: solid gray;
     border-radius: 0px;
     width: 200px;
-    margin-top: 525px;
     height: 45px;
 }
 
@@ -713,6 +886,8 @@ img {
     color: rgb(198, 198, 198);
     margin: 25px;
     padding: 10px;
+    width: 150px;
+    height: 75px;
     text-align: left;
     margin-bottom: 175px;
 }
@@ -814,13 +989,17 @@ img {
 .ctResistance video {
     max-width: 1300px;
     max-height: 700px;
-    width: auto;
+    width: 100%;
     height: auto;
     margin-top: -100px;
 }
 
 #ctResistanceCont {
     padding-top: 225px;
+}
+
+.ctResistanceInfo2Hide {
+    display: none;
 }
 
 .ctResistance h2 {
@@ -852,7 +1031,6 @@ img {
     text-align: right;
     width: 100%;
     margin-bottom: 35px;
-    
 } 
 
 #ctResistanceInfo2 h2 {
@@ -880,7 +1058,7 @@ img {
     overflow: hidden;
 }
 
-/*Section5*/
+/*Section 5*/
 
 #ctSection5 {
     display: flex;
@@ -907,11 +1085,13 @@ img {
 
 #pwHeaderandBtns {
     width: 100%;
-    height: 600px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #pwHeaderandBtns p {
-    margin-bottom: 625px;
     font-weight: bold;
 }
 
@@ -921,14 +1101,13 @@ img {
 
 #getPwBtn {
     color: rgb(58, 58, 58);
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 #getUpdatesBtn {
     background-color: transparent;
     color: white;
     border: solid white;
-    margin-left: 10px;
 }
 
 /*Section2*/
@@ -969,10 +1148,13 @@ img {
     height: auto;
     margin-top: -50px;
     transition: 1s;
+    border-radius: 5px;
 }
 
 #pwEnergyCont {
-    height: 500px;
+    max-height: 500px;
+    height: auto;
+    width: 100%;
     margin-top: 100px;
     overflow: hidden;
     border-radius: 5px;
@@ -1038,10 +1220,11 @@ img {
     margin: 35px;
 }
 
-#mpHeaderInfo button {
+#mpContactBtn {
     background-color: transparent;
     border: solid black;
     width: 200px;
+    margin-top: 400px;
 }
 
 #mpHeaderInfo p {
@@ -1054,16 +1237,24 @@ img {
     margin-bottom: 10px;
 }
 
-#mpHeaderInfoCont {
+#mpHeaderInfoCont1 {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    z-index: -1;
+}
+
+#mpHeaderInfoCont2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Section2*/
 
 #mpSection2 {
     background-color: white;
+    background-size: cover;
 }
 
 #mpSection2 img {
@@ -1092,6 +1283,14 @@ img {
 #mpSection4 {
     background-color: white;
     height: 800px;
+}
+
+#mpInstall1 {
+    display: block;
+}
+
+#mpInstall2 {
+    display: none;
 }
 
 #mpInstallCont {
@@ -1196,7 +1395,7 @@ img {
 }
 
 #chargeHeader {
-    padding-top: 125px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1210,17 +1409,19 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #chargeInfo div {
     margin: 15px;
     text-align: left;
-    width: 20%;
+    width: 33.33%;
 }
 
 #chargeInfo img {
     max-width: 100%;
-    max-height: 350px;
+    max-height: 500px;
     width: auto;
     height: auto;
 }
@@ -1228,6 +1429,8 @@ img {
 #startChargedCont {
     margin-left: 20%;
     margin-right: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #startChargedCont img {
@@ -1306,6 +1509,7 @@ img {
     max-height: 1200px;
     width: auto;
     height: auto;
+    border-radius: 5px;
 }
 
 #chargeRouteCont {
@@ -1381,10 +1585,6 @@ margin-top: 10px;
     margin-top: 20px;
 }
 
-#warrantyInfo h2 {
-    margin: 0px;
-}
-
 #warrantyInfo p {
     margin-top: 5px;
     width: 80%;
@@ -1399,6 +1599,7 @@ margin-top: 10px;
 #warrantyInfo img {
     max-width: 50%;
     max-height: 1000px;
+    min-width: 450px;
     width: auto;
     height: auto;
     margin-right: 100px;
@@ -1448,40 +1649,56 @@ margin-top: 10px;
     padding-top: 100px;
 }
 
-#wallChargeInfo {
+#wallchargeInfo {
     display: flex;
     justify-content: center;
     align-items: start;
-    margin-top: 550px;
 }
 
-#wallChargeInfo img {
+#wallchargeInfo img {
     width: 32px;
     height: 32px;
 }
 
-#wallChargeInfo h2 {
+#wallchargeInfo h2 {
     height: 32px;
+    margin-bottom: 10px;
 }
 
-#wallChargeInfo p {
+#wallchargeInfo p {
     font-weight: bold;
+    margin-top: 10px;
 }
 
-#wallChargeInfo div {
+#wallchargeInfo div {
     width: 8%;
     margin: 15px;
 }
 
-#wallChargeInfo button {
+#wallchargeInfo button, #wallchargebtnCont2 button {
     width: 200px;
     background-color: transparent;
     border: solid white;
     color: white;
 }
 
-#wallChargeInfo h2 {
+#wallchargeInfo #wallchargebtnCont {
+    width: 200px;
+}
+
+#wallchargebtnCont2 {
+    display: none;
+}
+
+#wallchargeInfo h2 {
     margin-top: 0px;
+}
+
+#hChargeHeaderandBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
 }
 
 /*Section2, 3, 4*/
@@ -1493,10 +1710,53 @@ margin-top: 10px;
 }
 
 .convenienceCont {
-    width: 22%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.convenienceimgCont {
+    background-size: cover;
+    background-position: center center;
+    width: 80%;
+    height: 100%;
+    max-width: 100%;
+}
+
+#convenienceimg1 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/HomeCharging-Convenience-Desktop-Global_001);
+}
+
+#convenienceimg2 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/HomeCharging-Installation-Desktop-EMEA);
+}
+
+#convenienceimg3 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/HomeCharging-CostofOwnership-Desktop-Global_001);
+}
+
+#convenienceimg4 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2800,c_fit,f_auto,q_auto:best/SuperchargerMap_EMEA_D);
+}
+
+#convenienceimg5 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1620,w_2880,c_fit,f_auto,q_auto:best/Supercharger-Range-Hero-Desktop-NA);
+}
+
+#convenienceimg6 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Supercharger-Trip-Planner-Hero-Desktop-EMEA-LHD);
+}
+
+#convenienceCont1Hide {
+    display: none;
+    width: 100%;
+}
+
+#convenienceCont3Hide {
+    display: none;
+    width: 100%;
 }
 
 .convenienceInfo {
@@ -1509,21 +1769,20 @@ margin-top: 10px;
     margin-top: 0px;
 }
 
-#hChargeSection2 img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+.convenienceInfo p {
+    margin: 0px;
 }
 
 #convenienceBtns {
     padding: 50px;
 }
 
+.shopnowBtn {
+    margin-bottom: 20px;
+}
+
 #convenienceBtns button {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border: solid black;
     background-color: white;
 }
@@ -1554,17 +1813,24 @@ margin-top: 10px;
     margin-top: -125px;
 }
 
-#sChargeHeader {
+#sChargeHeaderCont {
     position: absolute;
     top: 0px;
     width: 100%;
+    height: 100%;
     text-align: center;
+}
+
+#sChargeHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 #sChargeInfo {
     display: flex;
     justify-content: center;
-    margin-top: 575px;
     z-index: 2;
 }
 
@@ -1582,7 +1848,7 @@ margin-top: 10px;
     height: 1250px;
 }
 
-#convenienceBtns #findUsBtn {
+#convenienceBtns #findusBtn {
     width: 200px;
 }
 
@@ -1650,10 +1916,9 @@ margin-top: 10px;
 .sChargeSpeedInfo {
     display: flex;
     justify-content: center;
+    align-items: end;
+    height: 100%;
     width: 100%;
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 50px;
     color: white;
 }
 
@@ -1661,4 +1926,665 @@ margin-top: 10px;
     width: 300px;
 }
 
+.sChargeSpeedInfo p {
+    margin-bottom: 64px;
+}
 
+
+
+/*Media Queries*/
+
+@media only screen and (max-width:1600px) {
+
+    /*Model Y Page*/
+    #modelYSection3 video {
+        width: 50%;
+        height: auto;
+    }
+
+    .mYDivCont img {
+        width: 50%;
+        height: auto;
+    }
+
+    .mYDivCont {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    /*Model 3 Choose Page*/
+    #m3ChooseHeaderandBtns {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #m3ChooseHeaderandBtns h1 {
+        font-size: 40px;
+    }
+
+    #m3ChooseHeaderandBtns h2 {
+        font-size: 16px;
+    }
+
+    #m3Choose {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Mobile-RHD.png);
+    }
+
+    #m3BtnsCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    #m3ChoosePerformanceCont1 {
+        display: block;
+    }
+
+    #m3ChoosePerformanceCont2 {
+        display: none;
+    }
+
+    /*Model Y Page*/
+
+    .mYDivCont {
+        display: block;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #modelYSection2 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Safety-Mobile.jpg);
+    }
+
+    #modelYSection6 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Range-Mobile-RHD-v2.jpg);
+    }
+
+    #modelYSection2 div {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    #modelYSection3 video {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .mYDivCont img {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    #modelYSection4 video {
+        width: auto;
+        height: 100vh;
+    }
+
+    #modelYSection6 div {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    #modelYSection5 img {
+        max-width: 200%;
+        max-height: 2000px;
+        width: 200%;
+        height: auto;
+        margin-left: -100%;
+        border-radius: 0px;
+    }
+
+    #mYChargingInfoImgCont {
+        overflow: hidden;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #tripImg {
+        width: 100%;
+    }
+
+    #mYTripCont {
+        width: 90%;
+    }
+
+    /*Cybertruck Page*/
+
+    #ctHeaderCont div {
+        scale: 1.5;
+    }
+
+    #ctSection2 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Second-Hero-Mobile.jpg);
+        background-position: 0px -300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #ctSection2 div {
+        margin-bottom: 0px;
+    }
+
+    #ctSection2 #ctInfo1 {
+        margin-top: 200px;
+    }
+
+    #ctSection3 {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #ctBuiltForCont {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #ctBuiltForCont video {
+        max-width: 100%;
+        max-height: 1000px;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    #ctBuiltForInfo {
+        display: block;
+    }
+
+    #ctBuiltForInfo div {
+        display: none;
+    }
+
+    #ctBuiltForInfo h3 {
+        width: 300px;
+        text-align: left;
+        margin-left: 25px;
+    }
+
+    #ctBuiltForInfo h2 {   
+        text-align: left;
+        margin-left: 25px;
+        padding-top: 0px;
+    }
+
+    #ctBuiltForInfo p {
+        padding-top: 0px;
+    }
+
+    .ctResistance {
+        display: block;
+    }
+
+    .ctResistance video {
+        width: 100%;
+    }
+
+    .ctResistanceVidCont {
+        width: 100%;
+    }
+
+    #ctResistanceCont {
+        padding-top: 0px;
+    }
+
+    #ctSection4 {
+        height: 1800px;
+    }
+
+    #ctResistanceInfo1, #ctResistanceInfo2 {
+        width: 100%;
+    }
+
+    #ctResistanceInfo1 {
+        margin-left: 0px;
+    }
+
+    #ctResistanceCont {
+        margin-bottom: 250px;
+    }
+
+    #ctResistanceInfo2Cont {
+        width: 100%;
+        display: none;
+    }
+
+    #ctResistanceMerge .ctResistanceInfo2Hide {
+        display: block;
+        text-align: left;
+    }
+
+    /*Powerwall Page*/
+    
+    #pwSection2 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/power-your-home-mobile.png);
+        background-position: 0px -150px;
+    }
+
+    #pwSection4 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/storms-happen-mobile);
+    }
+
+    #pwSection2 {
+        display: block ;
+    }
+
+    #pwSection2 div {
+        text-align: left;
+        padding-top: 50px;
+        margin-top: 0px;
+        margin-left: 5%;
+        width: 80%;
+    }
+
+    #pwSection4 div {
+        margin-left: 5%;
+        width: 80%;
+    }
+
+    /*Megapack Page*/ 
+
+    #mpSection3 {
+        display: block;
+    }
+
+    #mpSection3 div {
+        width: 80%;
+        margin-left: 5%;
+        padding-top: 50px;
+        text-align: left;
+    }
+
+    #mpSection5 div {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    #mpInstall1 {
+        display: none;
+    }
+
+    #mpInstall2 {
+        display: block;
+    }
+
+    #mpSection4 video {
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    #mpInstallCont {
+        display: block;
+        margin: 0px;
+        padding-top: 100px;
+    }
+
+    #mpInstallCont div {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /*Charging Page*/
+
+    #chargeHeader div {
+        width: 80%;
+    }
+
+    #chargeSection3 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Largest-Network-Mobile.jpg);
+    }
+
+    #chargeSection5 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Charging-Less-Than-Gas-Mobile-EMEA-APAC.jpg);
+    }
+
+    #chargeInfo {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #startChargedCont {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #chargeInfo div {
+        width: 33.33%;
+    }
+
+    #startChargedCont img {
+        width: 100%;
+    }
+
+    #chargeSection2 {
+        height: 1500px;
+    }
+
+    /*Home Charging Page*/
+
+    .hChargeSection1 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Wall-Connector-Hero-Mobile-EN_GB%5B43558%5D) !important;
+    }
+
+    #wallchargebtnCont {
+        display: none;
+    }
+
+    #wallchargebtnCont2 {
+        display: block;
+    }
+
+    #wallchargeInfo div {
+        width: 17%;
+    }
+
+    #wallchargebtnCont2 button {
+        width: 325px;
+    }
+
+    #convenienceCont1, #convenienceCont3 {
+        display: none;
+    }
+
+    #convenienceCont1Hide {
+        display: block;
+    }
+
+    #hChargeSection2 {
+        display: block;
+    }
+
+    #convenienceCont2 {
+        width: 100%;
+    }
+
+    #convenienceCont3Hide {
+        display: block;
+    }
+
+    #convenienceBtns {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .convenienceimgCont {
+        width: 100%;
+        height: 60%;
+    }
+
+    /*Supercharging Page*/
+
+    .sChargeTravelHeader {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .sChargeTravelHeader h2 {
+        margin-bottom: 20px;
+    }
+
+    .convenienceInfo {
+        padding-bottom: 30px;
+    }
+
+    /*Dropdown menu for smaller screen sizes*/
+
+    #info {
+        display: none;
+    }
+
+    #icons {
+        display: none;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    #menuDropdownItems {
+        display: block;
+    }
+
+    .dropdownItems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    #menuDropdownDiscoverCont .dropdownItems {
+        margin: 0px;
+        padding-left: 18px;
+    }
+
+    #menuDropdownDiscoverCont .dropdownLinks {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:600px) {
+    
+    /*Home Page*/
+
+    .block {
+        display: block;
+        width: 100%;
+    }
+
+    .block button {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    #homeSection1 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Mobile-Global.jpg);
+    }
+
+    #homeSection2 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Mobile-RHD-v2.jpg);
+    }
+
+    #homeSection3 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Mobile-v2.jpg);
+    }
+
+    #homeSection4 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-3-Mobile-ROW.png);
+    }
+
+    #homeSection5 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Mobile-v2.jpg);
+    }
+
+    #homeSection6 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Mobile-EMEA.jpg );
+    }
+
+    /*Model 3 Choose Page*/
+
+    #m3ChooseBtns, #m3BtnsCont {
+        width: 100%;
+    }
+
+    /*Model Y Page*/
+
+    #mYTrips {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    #modelYSection1 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/New-Model-Y-Main-Hero-Mobile-LHD.jpg);
+    }
+
+    /*Cybertruck Page*/
+
+    .ctSection1 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Main-Hero-Hedgehog-Mobile.jpg) !important;
+    }
+
+    #ctSection2 {
+        background-position: 0px 0px;
+    }
+
+    /*Powerwall Page*/
+    
+    #getPwBtn {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    #getUpdatesBtn {
+        width: 90%;
+    }
+
+    /*Megapack Page*/
+
+    #mpHeaderInfoCont2 {
+        display: block;
+    }
+
+    #mpContactBtn {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    /*Charging Page*/
+
+    #chargeSection3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #startChargedCont {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #startCharged {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #freedomCont {
+        width: 90%;
+        margin: 0px;
+    }
+
+    #chargeFindBtn {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #chargeLearnBtn {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #freedomCont p {
+        width: 100%;
+    }
+
+    #chargeInfo {
+        display: block;
+    }
+
+    #chargeInfo div {
+        width: 95%;
+    }
+
+    #chargeInfo img {
+        width: 100%;
+    }
+
+    #chargeSection2 {
+        height: 2500px;
+    }
+
+    #warrantyInfo {
+        display: block;
+        width: 100%;
+    }
+
+    #warrantyInfo img {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    #batteryCont {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #reduceCostInfo {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #reduceCostInfo p, #reduceCostInfo button {
+        width: 100%;
+    }
+
+    #warrantyInfo div {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 25px;
+    }
+
+    #chargeSection8 button {
+        width: 93%;
+    }
+
+    #chargeSection6 {
+        height: 950px;
+    }
+
+    /*Homecharging Page*/
+
+    #hChargeSection2 {
+        height: 1200px;
+    }
+
+    /*Supercharging Page*/
+
+    #convenienceBtns #findusBtn {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (min-width:900px) {
+
+    /*Model 3 Choose Page*/
+    #m3ChoosePerformanceCont2 {
+        display: block;
+    }
+
+    #m3ChoosePerformanceCont1 {
+        display: none;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+  }

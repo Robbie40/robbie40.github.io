@@ -86,6 +86,55 @@ $('.headerAndBtns').mouseover(function() {
     $('.dropdownItemsCont').css('opacity', '0');
 });
 
+//Dropdown menu for smaller screen sizes
+
+//Opens dropdown menu
+$('#menuBtn').click(function() {
+    $('#menuItems').toggle('display');
+    $('#logo').toggle('display');
+    $('#menuBtn').toggle('display');
+});
+
+//Closes menu
+$('.menuCloseBtn').click(function() {
+    $('#menuItems').css('display', 'none');
+    $('#logo').toggle('display');
+    $('#menuBtn').toggle('display');
+    $('.menuDropdownItemsCont').css('display', 'none');
+});
+
+//Returns to main menu
+$('.backBtn').click(function() {
+    $('#menuItems').toggle('display');
+    $('.menuDropdownItemsCont').css('display', 'none');
+});
+
+//Opens vehicle menu
+$('#menuVehicles').click(function() {
+    $('#menuDropdownVehiclesCont').toggle('display');
+    $('#menuItems').toggle('display');
+});
+
+//Opens energy menu
+$('#menuEnergy').click(function() {
+    $('#menuDropdownEnergyCont').toggle('display');
+    $('#menuItems').toggle('display');
+});
+
+//Opens charging menu
+$('#menuCharging').click(function() {
+    $('#menuDropdownChargingCont').toggle('display');
+    $('#menuItems').toggle('display');
+});
+
+//Opens discover menu
+$('#menuDiscover').click(function() {
+    $('#menuDropdownDiscoverCont').toggle('display');
+    $('#menuItems').toggle('display');
+});
+
+
+
 /*------------------------------------------- Model 3 Choose Page -------------------------------------------*/
 
 //Changes nav bar items color when drop down menu slides down and up
@@ -96,55 +145,73 @@ $('#m3ChooseHeaderandBtns, #ctChooseHeaderandBtns, #pwHeaderandBtns, #chargeHead
     $('#icons').css('filter', 'invert(100%)');
 });
 
-
 $('.m3ChooseInfo').mouseover(function() {
     $('.dropBtn').css('color', 'black');
     $('#logo').css('filter', 'invert(0%)');
     $('#icons').css('filter', 'invert(0%)');
 });
 
-//Causes 'Switch to Performance' to pulsate
-
-$('#m3ChooseHeaderandBtns p').click(function() {
-    $('#m3ChooseHeaderandBtns p').effect('pulsate', {times:5}, 3000);
-});
-
-
 //Determines whether the user is scrolling up or down and then changes the background image and text
 
 var lastScrollTop = 0;
 $(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   if (st > lastScrollTop){
-       // downscroll code
-       $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Performance-Desktop-RHD.png)');
-       $('#performancePara').html('Switch to Model 3');
-       $('#m3ChooseHeaderandBtns h2').html('Performance');
-       $('#downArrow').html('&#129105');
-   } else {
-      // upscroll code
-      $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Desktop-RHD.png)');
-      $('#performancePara').html('Switch to Performance');
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+        // downscroll code
+        if (!$('#m3ChoosePerformanceCont1').is(':visible')) {
+            $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Performance-Desktop-RHD.png)');
+        }
+        else {
+            $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Performance-Mobile-RHD.png)');
+        }
+        $('.performancePara').html('Switch to Model 3');
+        $('#m3ChooseHeaderandBtns h2').html('Performance');
+        $('.downArrow').html('&#129105');
+    } 
+    else {
+        // upscroll code
+        if (!$('#m3ChoosePerformanceCont1').is(':visible')) {
+            $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Desktop-RHD.png)');
+        }
+        else {
+            $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Mobile-RHD.png)');
+        }
+      $('.performancePara').html('Switch to Performance');
       $('#m3ChooseHeaderandBtns h2').html('Standard and Long Range');
-      $('#downArrow').html('&#129107');
-   }
-   lastScrollTop = st;
+      $('.downArrow').html('&#129107');
+    }
+    lastScrollTop = st;
 });
 
 //Can also toggle between car modes by using a button
 
-$('#m3ChoosePerformanceCont').click(function() {
+$('#m3ChoosePerformanceCont1').click(function() {
+    if ($('#m3ChooseHeaderandBtns h2').html() === 'Standard and Long Range') {
+        $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Performance-Mobile-RHD.png)');
+        $('.performancePara').html('Switch to Model 3');
+        $('#m3ChooseHeaderandBtns h2').html('Performance');
+        $('.downArrow').html('&#129105');
+    }
+    else {
+        $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Mobile-RHD.png)');
+        $('.performancePara').html('Switch to Performance');
+        $('#m3ChooseHeaderandBtns h2').html('Standard and Long Range');
+        $('.downArrow').html('&#129107');
+    }
+});
+
+$('#m3ChoosePerformanceCont2').click(function() {
     if ($('#m3ChooseHeaderandBtns h2').html() === 'Standard and Long Range') {
         $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Performance-Desktop-RHD.png)');
-        $('#performancePara').html('Switch to Model 3');
+        $('.performancePara').html('Switch to Model 3');
         $('#m3ChooseHeaderandBtns h2').html('Performance');
-        $('#downArrow').html('&#129105');
+        $('.downArrow').html('&#129105');
     }
     else {
         $('#m3Choose').css('background-image', 'url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Choose-Standard-Desktop-RHD.png)');
-        $('#performancePara').html('Switch to Performance');
+        $('.performancePara').html('Switch to Performance');
         $('#m3ChooseHeaderandBtns h2').html('Standard and Long Range');
-        $('#downArrow').html('&#129107');
+        $('.downArrow').html('&#129107');
     }
 });
 
