@@ -93,6 +93,7 @@ $('#menuBtn').click(function() {
     $('#menuItems').toggle('display');
     $('#logo').toggle('display');
     $('#menuBtn').toggle('display');
+    $('#dropdownMenu li').toggle('display');
 });
 
 //Closes menu
@@ -100,6 +101,7 @@ $('.menuCloseBtn').click(function() {
     $('#menuItems').css('display', 'none');
     $('#logo').toggle('display');
     $('#menuBtn').toggle('display');
+    $('#dropdownMenu li').toggle('display');
     $('.menuDropdownItemsCont').css('display', 'none');
 });
 
